@@ -1,0 +1,38 @@
+.testimony {
+  text-align: center;
+  position: relative;
+  @include flex(column, 16px);
+
+  &__quotes {
+    position: relative;
+    width: 67px;
+    height: 56px;
+    top: 35px;
+    z-index: 1;
+  }
+
+  &__message {
+    position: relative;
+    z-index: 2;
+    @include body2;
+  }
+
+  &__person-name {
+    @include h3;
+    color: $rapture-blue;
+  }
+
+  &__job-position {
+    @include body(1.3rem, 1.8rem);
+    font-style: italic;
+    margin-block-start: -14px;
+  }
+
+  &__photo {
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    border: 2px solid $border-color;
+    overflow: hidden;
+  }
+}

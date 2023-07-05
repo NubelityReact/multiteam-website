@@ -1,0 +1,18 @@
+.feature {
+  @include flex(column, 8px);
+  &__img {
+    width: 72px;
+    height: 72px;
+  }
+
+  &__title {
+    @include h3;
+    color: $light-coral;
+    margin-block-start: 8px;
+  }
+
+  &__description {
+    @include body2;
+    text-align: center;
+  }
+}

@@ -1,0 +1,35 @@
+.footer {
+  padding: 66px 24px 64px;
+  background-color: $dark-green;
+  display: grid;
+  gap: 24px;
+  grid-template-areas: "logo" "nav" "address" "icons" "copyright";
+  place-items: center;
+
+  &__logo {
+    grid-area: logo;
+    width: 96px;
+  }
+
+  &__nav {
+    grid-area: nav;
+  }
+
+  &__address {
+    grid-area: address;
+    opacity: 0.6;
+    text-align: center;
+    @include body2;
+  }
+
+  &__icons {
+    grid-area: icons;
+    margin-block-start: 16px;
+  }
+
+  &__copyright {
+    grid-area: copyright;
+    opacity: 0.6;
+    margin-block-start: -8px;
+  }
+}

@@ -1,0 +1,40 @@
+html {
+  font-size: 62.5%; // 10px
+  box-sizing: border-box;
+  font-family: $font-main;
+  color: $white;
+}
+
+body {
+  background-color: $sacramento-state-green;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  font-family: inherit;
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+picture {
+  display: block;
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+.body--active {
+  overflow: hidden;
+}

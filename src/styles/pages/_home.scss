@@ -1,0 +1,67 @@
+.introduction {
+  padding: 78px 24px 197px;
+  background-image: url("../../assets/bg-pattern-home-2.svg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  text-align: center;
+
+  &__title {
+    @include headers(4rem, 4rem);
+    margin: 0 auto 18px;
+  }
+
+  &__talent {
+    color: $light-coral;
+  }
+
+  &__description {
+    @include body(1.5rem, 2.8rem);
+  }
+}
+
+.features {
+  background-color: $sacramento-state-green;
+  padding: 64px 24px;
+  background-image: url("../../assets/bg-pattern-home-3.svg");
+  background-repeat: no-repeat;
+  background-position: top right -100px;
+
+  &__title {
+    @include headers(3.2rem, 3.2rem);
+    width: 240px;
+    position: relative;
+    margin-block: 32px 56px;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 50px;
+      height: 4px;
+      background-color: $light-coral;
+      position: relative;
+      bottom: 32px;
+    }
+  }
+
+  &__components {
+    @include flex(column, 48px);
+  }
+}
+
+.testimonies {
+  @include flex(column, 48px);
+  padding: 140px 24px 164px;
+  background-image: url("../../assets/bg-pattern-home-4-about-3.svg"),
+    url("../../assets/bg-pattern-home-5.svg");
+  background-repeat: no-repeat;
+  background-position: top left, bottom right;
+
+  &__title {
+    @include headers(3.2rem, 3.2rem);
+    text-align: center;
+  }
+
+  &__success {
+    color: $rapture-blue;
+  }
+}

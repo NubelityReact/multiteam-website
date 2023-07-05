@@ -1,0 +1,35 @@
+@use "sass:math" as m;
+
+.nav-secondary {
+  @include flex(row, 24px);
+  @include body2;
+}
+
+.nav-primary {
+  position: absolute;
+  top: 0;
+  left: -100vw;
+  height: 100vh;
+  width: m.percentage(m.div(255, 375));
+  background-color: $midnight-green;
+  transition: all 0.1s;
+  padding: 56px 25px;
+  @include h3;
+  @include flex(column, 24px);
+  justify-content: flex-start;
+  z-index: 1000;
+
+  &__close-icon {
+    width: 18px;
+    margin-left: auto;
+    cursor: pointer;
+  }
+
+  &__button {
+    margin-block-start: 12px;
+  }
+
+  &--active {
+    left: 120px;
+  }
+}

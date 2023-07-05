@@ -1,0 +1,9 @@
+.header {
+  padding: 48px 24px 0px;
+  background-color: $midnight-green;
+  @include flex(row, 0px, space-between);
+
+  &__menu {
+    height: 17px;
+  }
+}

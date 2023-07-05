@@ -4,13 +4,17 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
+    "concurrently": "^8.2.0",
     "eslint": "^8.43.0",
     "husky": "^8.0.3",
     "lint-staged": "^13.2.2",
     "live-server": "^1.2.2",
-    "prettier": "^2.8.8"
+    "prettier": "^2.8.8",
+    "sass": "^1.63.6"
   },
   "scripts": {
-    "dev": "live-server src/"
+    "start": "live-server src/",
+    "compile": "sass src/styles/main.scss src/styles/index.css",
+    "dev": "concurrently \"live-server src/\" \"sass -w src/styles/main.scss src/styles/index.css\""
   }
 }
